@@ -133,14 +133,23 @@ header {
   transform: translate(-10px, -5px);
 }
 
+
+
+
+
 .body_about-glass-bg {
   background-color: var(--soft-red);
 }
+
 .body_about-fruit--left,
 .body_about-fruit--right {
   width: 50%;
   height: 500px;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
 .body_about-fruit--left {
@@ -151,8 +160,8 @@ header {
 }
 .body_about-fruit--wrap {
   position: absolute;
-  top: 70%;
-  left: 30%;
+  top: 50%;
+  left: 24%;
   transform: translateX(-15%);
 }
 
@@ -211,12 +220,23 @@ header {
 .body_img-right {
   display: flex;
 }
+
+.body_img-left,
+.body_img-right{
+  flex: 1;
+}
+
 .body_imgs-list li {
   width: 25%;
 }
 
+.body_img-item{
+  flex: 1;
+}
+
 .body_img-item img {
   width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -230,14 +250,13 @@ footer {
   width: 100%;
 }
 
-.wrap_footer-title{
-    padding-top: 70px;
+.wrap_footer-title {
+  padding-top: 70px;
 }
-.wrap_footer-item a{
-    text-decoration: none;
-    color: var(--dark-desaturated-cryan);
-    font-weight: 600;
-    
+.wrap_footer-item a {
+  text-decoration: none;
+  color: var(--dark-desaturated-cryan);
+  font-weight: 600;
 }
 .wrap_footer-items,
 .wrap_footer-icons {
@@ -254,15 +273,13 @@ footer {
   column-gap: 60px;
 }
 
-.wrap_footer-item > a:hover{
-    color: var(--grayish-blue);
+.wrap_footer-item > a:hover {
+  color: var(--grayish-blue);
 }
 
 .wrap_footer-icons {
   margin-top: 90px;
   column-gap: 30px;
   cursor: pointer;
-  
 }
-
 
